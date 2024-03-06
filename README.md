@@ -1,3 +1,3 @@
 # flutter_arcore_plugin
 
-A new Flutter project.
+Clone of arcore_flutter_plugin, clone in order to fix Kotlin gradle plugin version
