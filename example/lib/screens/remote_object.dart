@@ -34,11 +34,12 @@ class _RemoteObjectState extends State<RemoteObject> {
 
   void _addToucano(ArCoreHitTestResult plane) {
     final toucanNode = ArCoreReferenceNode(
-        name: "Toucano",
-        objectUrl:
-            "https://github.com/KhronosGroup/glTF-Sample-Models/raw/master/2.0/Duck/glTF/Duck.gltf",
-        position: plane.pose.translation,
-        rotation: plane.pose.rotation);
+      name: "Toucano",
+      objectUrl:
+          "https://github.com/KhronosGroup/glTF-Sample-Models/blob/main/2.0/Duck/glTF/Duck.gltf",
+      position: plane.pose.translation,
+      rotation: plane.pose.rotation,
+    );
 
     arCoreController?.addArCoreNodeWithAnchor(toucanNode);
   }
